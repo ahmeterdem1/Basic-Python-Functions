@@ -33,8 +33,9 @@ std::string* split(std::string in, char limiter){
             res[counter] = temp;
             counter += 1;
         }
-        res[counter] = "\0";
     }
+    res[amount + 1] = "\0";
+    
     return res;
 }
 
